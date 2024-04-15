@@ -1,0 +1,133 @@
+.suspendisecontain {
+    display: flex;
+    gap: 4%;
+    width: 100%;
+    height: 450px;
+    margin: 50px auto;
+    justify-content: center;
+    position: relative;
+}
+
+.leftsuspendisecontain,
+.rightsuspendisecontain {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+}
+
+.leftsuspendisecontain {
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/files/ba5.jpg?v=1660639875");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48%;
+}
+
+.rightsuspendisecontain {
+    width: 48%;
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/files/ba6.jpg?v=1660639875");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.leftdescription,
+.rightdescription {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftdescription > span,
+.rightdescription > span {
+    border-bottom: 2px solid black;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.leftdescription > span::after,
+.rightdescription > span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0; 
+    height: 2px;
+    background-color: aqua; 
+    transition: width 0.5s ease-in-out;
+}
+
+.leftdescription > span:hover::after,
+.rightdescription > span:hover::after {
+    width: 100%; 
+}
+
+.leftdescription > span:hover,
+.rightdescription > span:hover {
+    border-bottom: none; 
+    outline: none; 
+}
+
+.leftover,
+.rightover {
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: -250px;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.leftover {
+    background-color: white;
+}
+
+.rightover {
+    background-color: white;
+}
+
+.leftsuspendisecontain:hover .leftover {
+    top: 50px;
+    opacity: 0.2;
+}
+
+.rightsuspendisecontain:hover .rightover {
+    top: 50px;
+    opacity: 0.2;
+}
+@media screen and (max-width: 830px){
+.suspendisecontain{
+    flex-direction: column;
+}
+.leftsuspendisecontain{
+    width: 100%;
+    height: 220px;
+}
+.rightsuspendisecontain{
+    width: 100%;
+    height: 220px;
+}
+.suspendisecontain{
+    height: 520px;
+}
+.leftsuspendisecontain:hover .leftover{
+    top: 0px;
+    background-color: white;
+    width: 100%;
+}
+.rightsuspendisecontain:hover .rightover{
+    background-color: white;
+    top: 0px;
+    width: 100%;
+}
+}
+@media screen and (max-width: 600px){
+.leftdescription{
+width: 60%;
+}
+}

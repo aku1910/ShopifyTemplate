@@ -1,0 +1,370 @@
+.product {
+  width: 300px;
+  height: 300px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  transition: 0.5s ease-in-out; 
+}
+
+.product:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+ 
+  transition: 0.5s all;
+  opacity: 0; 
+}
+
+.product:hover:before {
+  opacity: 1;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product .productinfo {
+ 
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 180px;
+}
+
+
+.product .info {
+  position: relative;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+  display: flex;
+  
+}
+
+.product:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product .productinfo span {
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+  display: flex;
+  font-size: 25px;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 10px; 
+}
+
+.product:hover .productinfo span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.sidebar {
+  background-color: white;
+}
+
+.suspendisecontain{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.productbuton{
+  border: 2px solid black;
+  background-Color: white;
+  color: black;
+  width: 150px;
+  height: 40px ; 
+  font-weight: 600;
+}
+.productbuton:hover{
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  transition: 0.4s;
+}
+
+.menubuton {
+  background-color: black;
+  color: white;
+
+}
+.lastproduct{
+  padding-top: 60px;
+  padding-bottom: 96px;
+}
+
+.border {
+  border: 1px solid rgb(237, 237, 237);
+  color: rgb(17, 17, 17);
+
+}
+
+.buton {
+  color: white;
+}
+
+.bag {
+  color: rgba(0, 0, 1, 0.733);
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.image {
+  background-image: url('https://fone-store-demo.myshopify.com/cdn/shop/files/s1.jpg?v=1660640243');
+}
+
+.sliderr .image {
+  width: 100%;
+  height: 700px;
+}
+
+
+.slidermessage {
+  text-align: center;
+  width: 45%;
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  color: white;
+}
+
+.slidermessage h1 {
+  font-size: 70px;
+}
+
+.slidermessage span {
+
+  font-size: 20px;
+}
+
+.slidebutton {
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid white;
+
+}
+
+.slidermessage button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.arrows {
+  cursor: pointer;
+  position: absolute;
+  bottom: 400px;
+  left: 48%;
+  color: gray;
+  font-size: 30px;
+}
+
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.multislider {
+
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  width: 93%;
+  height: 180px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.multislider img {
+  width: 160px;
+}
+
+.parent {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.multislider:hover {
+  border: 1px solid green;
+  transition: 0.5s;
+}
+
+.multislider h3:hover {
+  color: green;
+  transition: 0.5s;
+}
+
+
+  .card1 {
+    width: 650px;
+    height: 350px;
+    box-sizing: border-box;
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/files/ba5.jpg?v=1660639875");
+  }
+
+  .card2 {
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/files/ba6.jpg?v=1660639875");
+    width: 650px;
+    height: 350px;
+  }
+
+  .cards {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 96px;
+    flex-wrap: wrap;
+  }
+  
+  .modalbuton{
+    background-color: green;
+    color: white;
+   }
+   .modalbuton:hover{
+    background-color: black;
+    transition: 0.5s;
+   }
+
+
+@media only screen and (max-width: 992px) {
+
+
+
+  .slidermessage h1 {
+    font-size: 30px;
+  }
+
+  .slidebutton {
+    font-size: 14px;
+    width: 130px;
+    height: 30px;
+    border: 1px solid white;
+  }
+
+  .arrows {
+    padding-bottom:-20px !important;
+  }
+   
+}
+
+@media only screen and (max-width: 620px) {
+  .arrows {
+    left: 43%;
+    margin-bottom: -200px !important;
+  }
+
+  .image {
+    width: 200px;
+  }
+
+  .slidermessage h1 {
+    font-size: 35px;
+
+  }
+
+  .slidermessage span {
+    font-size: 25px;
+  }
+
+  .slidermessage button {
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+  }
+  .aboutimagee h1{
+   font-size: 20px !important;
+   width: 300px !important;
+  }
+  .aboutimagee p{
+    font-size: 10px !important;
+    width: 300px !important;
+
+   }
+   .aboutimagee button{
+    font-size: 10px !important;
+    width: 60px !important;
+    height: 30px !important;
+   }
+   .aboutimagee{
+    padding-left: 200px !important;
+
+   }
+ 
+  
+}
+.border{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(211, 209, 209);
+}
+
+@media only screen and (max-width: 500px) {
+  .arrows {
+    margin-bottom: -300px !important;
+  }
+  .multislider{
+    width: 300px;
+ 
+  }
+  .aboutimagee{
+    padding-left: 400px !important;
+
+   }
+   .aboutimagee h1{
+    font-size: 20px !important;
+    width:250px !important;
+   }
+   .aboutimagee p{
+     font-size: 10px !important;
+     width: 250px !important;
+ 
+    }
+}
+
+
+@media only screen and (min-width: 300px) {
+  .arrows {
+
+    margin-bottom: -330px !important;
+  }
+}

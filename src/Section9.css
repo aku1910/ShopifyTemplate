@@ -1,0 +1,300 @@
+.Ourblogs {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.latestnews {
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/articles/blog6_1024x1024.jpg?v=1660623512");
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: self-start;
+
+
+}
+
+.arts {
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/articles/blog5_1024x1024.jpg?v=1660623390");
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: self-start;
+}
+
+.blogh4:hover,
+.blogh3:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+.blogh4 {
+    color: gray;
+    margin: 0;
+}
+
+.blogp {
+    color: gray;
+}
+
+.blogdescription {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containlatestnew {
+    display: flex;
+    flex-direction: column;
+}
+
+.august {
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.august>hr {
+    width: 25%;
+}
+
+.over {
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .5s;
+
+}
+
+.interesting {
+    background-image: url("https://fone-store-demo.myshopify.com/cdn/shop/articles/blog3_1024x1024.jpg?v=1660623375");
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: self-start;
+}
+
+.latestnews:hover .over {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.interesting:hover .over {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.arts:hover .over {
+    opacity: 0.4;
+    cursor: pointer;
+
+}
+
+.Ourblogs {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 70px;
+}
+
+.slidercart {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.containlatestnew-group {
+    display: flex;
+}
+
+.containlatestnew {
+    flex: 0 0 33.33%;
+}
+
+
+
+.blogdescription {
+    padding: 20px;
+}
+
+.blogh4 {
+    font-size: 1.2em;
+}
+
+.blogh3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.blogp {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #f4f4f4;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .Ourblogs {
+        height: 1400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .latestnews,
+    .arts,
+    .interesting,
+    .over {
+        width: 250px;
+        height: 250px;
+    }
+
+    .containlatestnew {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .containlatestnew {
+        gap: 5%;
+    }
+
+    .latestnews,
+    .arts,
+    .interesting,
+    .over {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blogh4 {
+        font-size: 14px;
+    }
+
+    .blogh3 {
+        font-size: 12px;
+    }
+
+    .blogp {
+        font-size: 12px;
+    }
+
+    .blogdescription {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .blogdescription {
+        width: 150px;
+    }
+
+    .latestnews,
+    .arts,
+    .interesting,
+    .over {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .blogdescription {
+        width: 120px;
+    }
+
+    .latestnews,
+    .arts,
+    .interesting,
+    .over {
+        width: 120px;
+        height: 120px;
+    }
+
+    .blogh4 {
+        font-size: 12px;
+    }
+
+    .blogh3 {
+        font-size: 10px;
+    }
+
+    .blogp {
+        font-size: 10px;
+    }
+
+    .august {
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
+    }
+}
